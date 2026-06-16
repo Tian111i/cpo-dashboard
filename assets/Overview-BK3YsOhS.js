@@ -1,0 +1,1 @@
+import{j as e}from"./index-CvxEoFXC.js";import"./vendor-react-CBPlXXEA.js";function s(){return e.jsx("div",{className:"flex h-full items-center justify-center text-muted-foreground",children:e.jsx("p",{className:"text-sm",children:"总览 — 开发中"})})}export{s as Overview};
