@@ -9,6 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="description" content="十一的看板 — AI 量化投研平台。自然语言策略研究、回测分析、多智能体协作、文档阅读、多市场分析。" />
+    <script>
+      window.onerror = function(msg, url, line, col, err) {
+        var d = document.createElement('pre');
+        d.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#111;color:#f44;padding:16px;font-size:12px;white-space:pre-wrap;word-break:break-all;max-height:40vh;overflow:auto;border-top:2px solid red';
+        d.textContent = 'ERROR: ' + (err && err.stack ? err.stack : msg);
+        document.body.appendChild(d);
+      };
+      window.addEventListener('unhandledrejection', function(e) {
+        var d = document.createElement('pre');
+        d.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#111;color:#f84;padding:16px;font-size:12px;white-space:pre-wrap;word-break:break-all;max-height:40vh;overflow:auto;border-top:2px solid orange';
+        d.textContent = 'UNHANDLED REJECTION: ' + (e.reason && (e.reason.stack || e.reason.message || e.reason) || e.reason || e);
+        document.body.appendChild(d);
+      });
+    </script>
     <script type="module" crossorigin src="./assets/index-CvxEoFXC.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-react-CBPlXXEA.js">
     <link rel="stylesheet" crossorigin href="./assets/index-USR0u8DP.css">
